@@ -50,7 +50,8 @@ dependencies {
 
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
-    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
-    implementation 'com.github.stfalcon:chatkit:0.3.3'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+    // implementation 'com.github.stfalcon:chatkit:0.3.3'
+    implementation 'com.github.stfalcon-studio:Chatkit:0.4.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

@@ -19,6 +19,7 @@ allprojects {
         google()
         jcenter()
         maven { url 'https://jitpack.io' }
+        mavenCentral()
     }
 
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
