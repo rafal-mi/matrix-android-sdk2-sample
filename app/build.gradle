@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
+def buildPropertiesFile = rootProject.file("build.properties")
+def buildProperties = new Properties()
+buildProperties.load(new FileInputStream(buildPropertiesFile))
+
 android {
     namespace 'org.matrix.android.sdk.sample'
     compileSdk 34
@@ -13,6 +17,10 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "USERNAME", buildProperties['USERNAME'])
+        buildConfigField("String", "PASSWORD", buildProperties['PASSWORD'])
+        buildConfigField("String", "HOMESERVER", buildProperties['HOMESERVER'])
     }
 
     buildTypes {
@@ -33,6 +41,7 @@ android {
 
     buildFeatures {
         viewBinding true
+        buildConfig true
     }
 }
 
