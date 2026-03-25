@@ -53,6 +53,8 @@ class SimpleLoginFragment : Fragment() {
         }
 
         views.usernameField.append(BuildConfig.USERNAME)
+        views.passwordField.append(BuildConfig.PASSWORD)
+        views.homeserverField.append(BuildConfig.HOMESERVER)
     }
 
     override fun onDestroyView() {

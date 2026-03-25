@@ -1,3 +1,3 @@
 USERNAME=""
 PASSWORD=""
-HOMESERVER=""
+HOMESERVER="https://matrix.org"
